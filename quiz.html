@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Тест знаний</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="wrapper">
+        <main class="main">
+            <div class="quiz__head">
+                <div class="head__content" id="head">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut ducimus odit accusamus, illum quas magni provident odio praesentium commodi sint, porro harum, minus cupiditate architecto culpa aut ex dolore officia.</div>
+            </div>
+            <div class="quiz__body">
+                <div class="buttons">
+                    <div class="buttons__content" id="buttons">
+                        <button class="button">Обычный ответ</button><br>
+                        <button class="button button_wrong">Неправильный ответ</button><br>
+                        <button class="button button_correct">Правильный ответ</button><br>
+                        <button class="button button_passive">Ненажатая кнопка</button><br>
+                    </div>
+                </div>
+                <div class="quiz__explanation" id="explanation" style="display: none;">
+                    <p id="explanation-text"></p>
+                    <button class="button next-button" id="next-button" style="display: none;">Далее</button>
+                </div>
+                <div class="quiz__footer">
+                    <div class="footer__content" id="pages">0 / 0</div>
+                </div>
+                <div class="quiz__results" id="results" style="display: none;">
+                    <h2>Результаты</h2>
+                    <p id="score"></p>
+                    <ul id="answers"></ul>
+                </div>
+            </div>
+           
+        </main>
+     </div>
+     <script src="script.js"></script>
+</body>
+</html>

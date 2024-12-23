@@ -1,0 +1,166 @@
+body, html
+{
+   width: 100%;
+   height: 100%;
+   margin: 0;
+   padding: 0;
+   overflow: hidden;
+   font-size: 16px;
+   font-family: helvetica, arial;
+   background: #f9f9f9;
+   color: #111;
+   overflow:auto;
+}
+#head{
+   color: white;
+}
+ 
+.wrapper
+{
+   width: 100%;
+   height: 100%;
+   display: table;
+}
+ 
+.main
+{
+   display: table-cell;
+   vertical-align: middle;
+   text-align: center;
+}
+ 
+.quiz-frame
+{
+   border: 0;
+   box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+ 
+.quiz__head
+{
+   font-size: 20pt;
+   margin: 10px;
+   margin-bottom: 50px;
+}
+ 
+.head__content
+{
+   padding: 5px;
+}
+ 
+.quiz__body
+{
+   margin: 10px;
+}
+ 
+.quiz__footer
+{
+   position: absolute;
+   bottom: 0;
+   display: block;
+   width: 100%;
+}
+ 
+.footer__content
+{
+   padding: 5px;
+}
+ 
+.button
+{
+   border: 0;
+   border-radius: 10px;
+   background: rgba(102, 126, 234, 0.2);
+   border: solid 0.5px rgba(202, 126, 234, 1);
+   color: #fff;
+   padding: 10px 25px;
+   width: 70%;
+   font-size: 15pt;
+   display: block;
+   margin: 2px auto;
+   cursor: pointer;
+   position: relative;
+   
+}
+ 
+.button_wrong
+{
+   background: rgb(251, 153, 153);
+}
+ 
+.button_correct
+{
+   background: #5EB97D;
+}
+ 
+.button_passive
+{
+   background: rgba(102, 126, 234, 0.2);
+}
+@keyframes gradient {
+   0% {
+       background-position: 0% 50%;
+   }
+   50% {
+       background-position: 100% 50%;
+   }
+   100% {
+       background-position: 0% 50%;
+   }
+}
+
+body, html {
+   width: 100%;
+   height: 100%;
+   margin: 0;
+   padding: 0;
+   overflow: hidden;
+   font-size: 16px;
+   font-family: helvetica, arial;
+   background: linear-gradient(135deg, #667eea, #764ba2);
+   background-size: 200% 200%;
+   animation: gradient 3s ease infinite;
+   color: #111;
+}
+/* Добавляем стили для эффекта волн */
+@keyframes ripple {
+   0% {
+       transform: scale(0);
+       opacity: 1;
+   }
+   100% {
+       transform: scale(4);
+       opacity: 0;
+   }
+}
+
+.ripple {
+   position: absolute;
+   border-radius: 50%;
+   background: rgba(102, 126, 234, 0.2);
+   pointer-events: none;
+   animation: ripple 1s linear infinite;
+}
+
+/* Добавляем стили для следа за курсором */
+/* Добавляем стили для следа за курсором */
+.cursor-line {
+   position: absolute;
+   border-radius: 50%;
+   background: rgba(255, 255, 255, 0.3); /* Уменьшаем непрозрачность */
+   pointer-events: none;
+   width: 10px; /* Уменьшаем размер */
+   height: 10px; /* Уменьшаем размер */
+   transform: translate(-50%, -50%);
+   transition: transform 0.1s ease-out; /* Плавное перемещение */
+}
+
+.quiz__results {
+   margin-top: 0;
+   padding: 0;
+   background: linear-gradient(135deg, #667eea, #764ba2);
+   
+}
+
+.quiz__results h2 {
+   margin-bottom: 10px;
+}
